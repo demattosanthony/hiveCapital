@@ -26,10 +26,5 @@ export default function Home() {
 const Container = styled.div`
   height: 100vh;
   width: 100vw;
-  max-width: 100%;
   background: linear-gradient(to top, black, #222222);
-
-  /* @media (max-width: 375px) {
-    height: 100vh;
-  } */
 `

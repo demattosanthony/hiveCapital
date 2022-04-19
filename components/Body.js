@@ -71,6 +71,9 @@ const InnerInfoContainer = styled.div`
   align-items: center;
   display: flex;
   flex-direction: column;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
 
   @media (max-width: 1100px) {
     margin-left: 0px;
@@ -89,7 +92,6 @@ const InfoTitle = styled.div`
 
   font-size: 80px;
   font-weight: bold;
-  margin-top: 250px;
   font-family: Inter, sans-serif;
   letter-spacing: 3px;
 
