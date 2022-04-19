@@ -2,43 +2,10 @@ import React from 'react'
 import styled from '@emotion/styled'
 import Image from 'next/image'
 import { Button } from '@mui/material'
-import { useState, useEffect } from 'react'
+import { useMediaQuery } from '@mui/material'
 
 function Body() {
-  const useWindowDimensions = () => {
-    const hasWindow = typeof window !== 'undefined'
-
-    function getWindowDimensions() {
-      const width = hasWindow ? window.innerWidth : null
-      const height = hasWindow ? window.innerHeight : null
-      return {
-        width,
-        height,
-      }
-    }
-
-    const [windowDimensions, setWindowDimensions] = useState(
-      getWindowDimensions(),
-    )
-
-    useEffect(() => {
-      if (hasWindow) {
-        function handleResize() {
-          setWindowDimensions(getWindowDimensions())
-        }
-
-        window.addEventListener('resize', handleResize)
-        return () => window.removeEventListener('resize', handleResize)
-      }
-    }, [hasWindow])
-
-    return windowDimensions
-  }
-
-  const { height, width } = useWindowDimensions()
-  const breakpoint = 1100
-  const breakpoint2 = 768
-
+  const matchces = useMediaQuery('(min-width: 1100px)')
   return (
     <Container>
       <InfoContainer>
@@ -54,7 +21,7 @@ function Body() {
         </InnerInfoContainer>
       </InfoContainer>
       <ImageContainer>
-        {breakpoint > width ? (
+        {matchces && (
           <Image
             src={
               'https://ipfs.io/ipfs/QmeQmNZQDABRvQA5NxoDpakd3ctHDZM4bga74NpGtRawFN?filename=hivecapitalweb-03.png'
@@ -63,7 +30,8 @@ function Body() {
             height={459}
             width={598}
           />
-        ) : (
+        )}
+        {!matchces && (
           <Image
             src={
               'https://ipfs.io/ipfs/QmeQmNZQDABRvQA5NxoDpakd3ctHDZM4bga74NpGtRawFN?filename=hivecapitalweb-03.png'
@@ -206,10 +174,4 @@ const ImageContainer = styled.div`
   @media (max-width: 1100px) {
     width: 100%;
   }
-`
-
-const MyImage = styled(Image)`
-  object-fit: contain;
-  width: 100%;
-  position: relative !important;
 `
