@@ -57,7 +57,7 @@ function Body() {
         {breakpoint > width ? (
           <Image
             src={
-              'https://ipfs.io/ipfs/QmeQmNZQDABRvQA5NxoDpakd3ctHDZM4bga74NpGtRawFN?filename=hivecapitalweb-03.png'
+              '/QmeQmNZQDABRvQA5NxoDpakd3ctHDZM4bga74NpGtRawFN?filename=hivecapitalweb-03.png'
             }
             alt="Investment image"
             height={459}
@@ -66,7 +66,7 @@ function Body() {
         ) : (
           <Image
             src={
-              'https://ipfs.io/ipfs/QmeQmNZQDABRvQA5NxoDpakd3ctHDZM4bga74NpGtRawFN?filename=hivecapitalweb-03.png'
+              '/QmeQmNZQDABRvQA5NxoDpakd3ctHDZM4bga74NpGtRawFN?filename=hivecapitalweb-03.png'
             }
             alt="Investment image"
             height={220}
