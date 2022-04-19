@@ -29,7 +29,7 @@ const Container = styled.div`
   max-width: 100%;
   background: linear-gradient(to top, black, #222222);
 
-  @media (max-width: 375px) {
-    height: auto;
-  }
+  /* @media (max-width: 375px) {
+    height: 100vh;
+  } */
 `
