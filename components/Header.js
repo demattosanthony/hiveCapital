@@ -25,7 +25,7 @@ function Header() {
       <LogoContainer>
         <Image
           src={
-            '/QmTEUdn39xz28prrkHpupdBCV6EQWsCbxrDtFVk4dKnX1u?filename=hivecapitalweb-12.png'
+            'https://ipfs.io/ipfs/QmTEUdn39xz28prrkHpupdBCV6EQWsCbxrDtFVk4dKnX1u?filename=hivecapitalweb-12.png'
           }
           alt="Header Logo"
           width={168}

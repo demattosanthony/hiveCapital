@@ -11,8 +11,8 @@ const nextConfig = {
   },
   images: {
     // For deployment
-    loader: 'imgix',
-    path: 'https://ipfs.io/ipfs/',
+    // loader: 'imgix',
+    // path: 'https://ipfs.io/ipfs/',
     domains: ['ipfs.io'],
   },
 }
