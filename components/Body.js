@@ -54,16 +54,20 @@ function Body() {
         </InnerInfoContainer>
       </InfoContainer>
       <ImageContainer>
-        {breakpoint < width ? (
+        {breakpoint > width ? (
           <Image
-            src={'/hivecapitalweb-03.png'}
+            src={
+              'https://ipfs.io/ipfs/QmeQmNZQDABRvQA5NxoDpakd3ctHDZM4bga74NpGtRawFN?filename=hivecapitalweb-03.png'
+            }
             alt="Investment image"
             height={459}
             width={598}
           />
         ) : (
           <Image
-            src={'/hivecapitalweb-03.png'}
+            src={
+              'https://ipfs.io/ipfs/QmeQmNZQDABRvQA5NxoDpakd3ctHDZM4bga74NpGtRawFN?filename=hivecapitalweb-03.png'
+            }
             alt="Investment image"
             height={220}
             width={300}
