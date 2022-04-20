@@ -177,4 +177,9 @@ const ImageContainer = styled.div`
   @media (max-width: 1100px) {
     width: 100%;
   }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    margin-top: 20px;
+  }
 `
