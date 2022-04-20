@@ -14,6 +14,11 @@ export default function Home() {
           rel="icon"
           href="https://ipfs.io/ipfs/Qmd7KN5BrZYmNpUcU5bFWpAS8RQadjSHPJDoze8KwqVP64?filename=logoCircle.png"
         />
+        <meta
+          name="theme-color"
+          content="#222222"
+          media="(prefers-color-scheme: dark)"
+        />
       </Head>
 
       <Header />
