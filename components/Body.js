@@ -23,9 +23,7 @@ function Body() {
       <ImageContainer>
         {matchces && (
           <Image
-            src={
-              'https://ipfs.io/ipfs/QmeQmNZQDABRvQA5NxoDpakd3ctHDZM4bga74NpGtRawFN?filename=hivecapitalweb-03.png'
-            }
+            src={'/investmentImg.png'}
             alt="Investment image"
             height={459}
             width={598}
@@ -33,9 +31,7 @@ function Body() {
         )}
         {!matchces && (
           <Image
-            src={
-              'https://ipfs.io/ipfs/QmeQmNZQDABRvQA5NxoDpakd3ctHDZM4bga74NpGtRawFN?filename=hivecapitalweb-03.png'
-            }
+            src={'/investmentImg.png'}
             alt="Investment image"
             height={220}
             width={300}
@@ -126,6 +122,11 @@ const Description = styled.div`
   @media (max-width: 1400px) {
     width: 550px;
     /* margin-top: 200px; */
+  }
+
+  @media (max-width: 1250px) {
+    width: 475px;
+    font-size: 20px;
   }
 
   @media (max-width: 768px) {

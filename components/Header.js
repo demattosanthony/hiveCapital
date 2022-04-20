@@ -26,7 +26,7 @@ function Header() {
         <Image
           src={'/hivecapital-17.png'}
           alt="Header Logo"
-          width={498}
+          width={598}
           height={176}
         />
       </LogoContainer>
