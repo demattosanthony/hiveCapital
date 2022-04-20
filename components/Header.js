@@ -24,12 +24,10 @@ function Header() {
     <Container>
       <LogoContainer>
         <Image
-          src={
-            'https://ipfs.io/ipfs/QmTEUdn39xz28prrkHpupdBCV6EQWsCbxrDtFVk4dKnX1u?filename=hivecapitalweb-12.png'
-          }
+          src={'/hivecapital-17.png'}
           alt="Header Logo"
-          width={168}
-          height={66}
+          width={498}
+          height={176}
         />
       </LogoContainer>
 
